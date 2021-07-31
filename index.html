@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Linda Paredes - Graphic Designer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div id="logo">
+                    <a href="#home">Linda Paredes</a>
+                </div>
+                <div id="about" class="navbar">
+                    <a href="#home">About</a>   
+                </div>
+                <div id="contact" class="navbar">
+                    <a href="#form">Contact</a>
+                </div>
+                <button type="button" onclick="location.href='#myownwork'" id="mywork" class="navbar">My Work</button>
+            </nav>
+        </header>
+        
+        <section id="home">
+            <img id="myself" src="img/selfie.png"/>
+            <div id="calltoaction">
+                <h1>Hi there!</h1>
+                <p>Fuelled by passion for designing simple web designs.
+                    I have the deep desire to excel and continuosly
+                    improve in my work.
+                </p>
+                <button type="button" onclick="location.href='#myownwork'">View My Work</button>
+            </div>
+        </section>
+        <section id="myownwork"> 
+            <img src="img/work1.png"/>
+            <img src="img/work2.png"/>
+            <img src="img/work3.png"/>
+            <img src="img/work4.png"/>
+        </section>
+        <section id="form">
+            <div id="submitarea">
+                <h1>Want to get in Touch?</h1>
+            </div>
+            <form id="formarea">
+                    <div id="firstname">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+                    
+                    </div>
+                    <div id="lastname">
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
+                    
+                    </div>
+                    <div id="emailaddress">
+                        <label for="email">Email Address</label><br>
+                        <input type="text" id="email" name="email" placeholder="Enter your email address"><br>
+
+                    </div>
+                    <div id="message">
+                        <label for="msg">Message</label><br>
+                        <textarea maxlength=350 id="msg" name="msg" placeholder="Enter your message"></textarea><br>
+                    </div>
+                    <div id="button">
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                    </form>
+        </section>
+
+        <footer>
+            <div id="gotohome">
+                <a href="#home">
+                    <span class="iconify" data-icon="bi:arrow-up-square-fill" data-inline="false"></span>
+                </a>
+               </div>
+            <div id="socialmedia">
+                <a href="https://dribbble.com/lparedes17001" target="_blank">
+                    <span class="iconify" data-inline="false" data-icon="akar-icons:dribbble-fill" style="font-size:24px;"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/linda-paredes-68739915b/" target="_blank">
+                    <span class="iconify" data-inline="false" data-icon="akar-icons:linkedin-fill" style="font-size: 24px;"></span>
+                </a>
+                <a href="https://www.instagram.com/lindafanlover/" target="_blank">
+                    <span class="iconify" data-inline="false" data-icon="akar-icons:instagram-fill" style="font-size: 24px;"></span>
+                </a>
+                <a href="https://www.pinterest.com/lindafanlover/" target="_blank">
+                    <span class="iconify" data-inline="false" data-icon="akar-icons:pinterest-fill" style="font-size: 24px;"></span>
+                </a>
+            </div>
+            <p>Copyright <a href="#home"><span class="iconify" data-inline="false" data-icon="ant-design:copyright-circle-outlined" style="font-size: 19px; vertical-align: middle;"></span>
+            </a>2021 Linda Paredes. All rights reserved. </p>
+        </footer>
+
+        
+        
+    </body>
+</html>
