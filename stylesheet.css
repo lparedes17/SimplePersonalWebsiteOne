@@ -22,12 +22,16 @@ a{
     color: black;
 }
 .navbar{
-    margin: 1rem 1rem;
+    margin: 1rem;
 }
 
 .navbar a{
     text-decoration: none;
     color: black;
+}
+
+.hamburger{
+    display: none;
 }
 
 #mywork{
@@ -125,7 +129,7 @@ a{
 }
 
 #formarea {
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 3em;
@@ -185,7 +189,7 @@ textarea::placeholder{
     width: 100%;
 }
 
-
+/* scroll up button */
 #submit{
     position: sticky;
     top:10px;
@@ -220,4 +224,138 @@ footer{
 .iconify:hover{
     cursor: pointer;
     color:lightpink;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:1030px){
+    body{
+        font-size: 14px;
+    }
+    #calltoaction p{
+        font-size: 18px;
+    }
+
+    #form{
+        padding:2rem;
+        display: flex;
+        justify-content:space-evenly;
+        /* align-items:center; */
+    }
+    #submitarea{
+        /* padding-right: 1rem; */
+    }
+    #submitarea h1{
+        font-size:36px;
+    }
+
+    #formarea{
+        padding: 0 0 0 18px;
+        display: flex;
+        flex-direction: column;
+        flex-shrink:0;
+
+    }
+
+    input[type=text], textarea{
+        padding: 10px;
+        width:100%;
+        
+    }
+    .forminput label,input,textarea{
+        font-size: 14px;
+    }
+
+    #message textarea{
+        height: 150px;
+        /* width: 100%; */
+    }
+
+   
+
+
+}
+
+@media screen and (max-width: 560px){
+    body{
+        font-size:14px;
+    }
+
+    nav{
+        padding:1rem;
+        margin:2rem;
+        justify-content: flex-end;
+    }
+
+    .navbar{
+        margin:0;
+    }
+
+    #logo{
+        flex-grow:1;
+    }
+
+    
+    .hamburger{
+        display: block;
+    }
+
+    .navbar a{
+        display: none;
+    }
+
+    #mywork{
+        display:none;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #myself{
+        width:100%;
+    }
+
+    #calltoaction{
+        padding:3rem;
+        margin:0;
+    }
+
+    #calltoaction button{
+        padding: 15px;
+        margin: 10px 0px;
+        background-color: pink;
+        border:none;
+        border-radius:0;
+        width:100%;
+    }
+
+    #myownwork{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #form{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #submitarea h1{
+        font-size:24px;
+        text-align: center;
+    }
+
+    #submit{
+        width:100%;
+        border-radius: 0;
+    }
+
+    #formarea{
+        width:100%;
+    }
+
+    #gotohome{
+        font-size: 3rem;
+     }
+
 }
