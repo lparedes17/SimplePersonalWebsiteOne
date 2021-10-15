@@ -338,6 +338,7 @@ footer{
     #form{
         display:flex;
         flex-direction: column;
+        border-radius: 0;
     }
 
     #submitarea h1{
